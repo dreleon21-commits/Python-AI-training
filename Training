@@ -1,0 +1,1552 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyO+GqBQZbbAUzFd7SQMT78f",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/dreleon21-commits/Python-AI-training/blob/main/Training\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "3HdaGMdbOS24",
+        "outputId": "7199deb7-d51c-480e-bf2f-aff20e48d620"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Andre\n",
+            "<class 'int'>\n"
+          ]
+        }
+      ],
+      "source": [
+        "name = \"Andre\"\n",
+        "age = 25\n",
+        "print(name)\n",
+        "print(type(age))"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "name = \"Andre\"\n",
+        "age = 25\n",
+        "height = 5.9\n",
+        "is_student =False"
+      ],
+      "metadata": {
+        "id": "56eTPrXHOmh0"
+      },
+      "execution_count": 3,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(name)\n",
+        "print(type(age))\n",
+        "print(type(height))\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Rx28n0xePTqx",
+        "outputId": "9706526c-7e28-4c72-d1fc-9994bd216c51"
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Andre\n",
+            "<class 'int'>\n",
+            "<class 'float'>\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(type(name))\n",
+        "print(type(is_student))\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "8c50epRhPoT-",
+        "outputId": "6b5f117e-13fa-485b-b348-347b6a208e6b"
+      },
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "<class 'str'>\n",
+            "<class 'bool'>\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(7+3)\n",
+        "print(7/2)\n",
+        "print(7//2)\n",
+        "print(7%2)\n",
+        "print(2**3)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "k1Iu2rHcP1ak",
+        "outputId": "f4cfbb19-8254-4a35-b556-eb4a6902a8e1"
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "10\n",
+            "3.5\n",
+            "3\n",
+            "1\n",
+            "8\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "greeting = \"Hello, \" + name\n",
+        "print(greeting)\n",
+        "print(f\"{name} is {age} years old\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "_7ZqFnp6QOCY",
+        "outputId": "6e1a19e7-d87a-44e8-9f9a-a0c6b8435ae6"
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Hello, Andre\n",
+            "Andre is 25 years old\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "Bill = 90.75\n",
+        "Tip_Percent=15\n",
+        "Tip = (Bill*Tip_Percent)/100\n",
+        "Total = Bill + Tip\n",
+        "print(f\"Tip:{round(Tip,2)}\")\n",
+        "print(f\"Total:{round(Total,2)}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "CQ1e1GiiQ8wl",
+        "outputId": "e42fa4ba-542d-4ca3-f819-406dcde40bd6"
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Tip:13.61\n",
+            "Total:104.36\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "Celcius = 27\n",
+        "Fahrenheit = Celcius * 9/5 + 32\n",
+        "print(f\"{Celcius} C is {Fahrenheit} F\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "iM8NLWC-SxWe",
+        "outputId": "7ad00a89-dd74-4536-d8ec-ec77ba9bc7ab"
+      },
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "27 C is 80.6 F\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "age = 25\n",
+        "print(age>18)\n",
+        "print(age<18)\n",
+        "print(age>=25)\n",
+        "print(age<=24)\n",
+        "print(age==25)\n",
+        "print(age!=25)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ZoQcc81vTkKb",
+        "outputId": "039081f0-b8ee-48b0-b5d9-5635cb30f323"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "True\n",
+            "False\n",
+            "True\n",
+            "False\n",
+            "True\n",
+            "False\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(age>18 and age <30)\n",
+        "print(age<18 or age>24)\n",
+        "print(not age == 25)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "RCLPphI_9Hx5",
+        "outputId": "7767b87e-e8a8-4c64-ff38-aa3649298e8c"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "True\n",
+            "True\n",
+            "False\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "temperature = 8\n",
+        "if temperature>30:\n",
+        "  print(\"It's hot. Drink water.\")\n",
+        "elif temperature > 20:\n",
+        "  print(\"Nice weather!\")\n",
+        "else:\n",
+        "  print(\"It's cold. Bring a jacket.\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "C-rolq6Q9esX",
+        "outputId": "1037ea3a-3d1a-492e-8605-57b3b84d856c"
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "It's cold. Bring a jacket.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "for i in range(5):\n",
+        "  print(i)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "7WdnevUP-DJ-",
+        "outputId": "58fa7417-c7dd-4c46-e6e0-a9aaeb7b2521"
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "0\n",
+            "1\n",
+            "2\n",
+            "3\n",
+            "4\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "for i in range(1,6):\n",
+        "  print(i)\n",
+        "for i in range(0,10,2):\n",
+        "  print(i)\n",
+        "for letter in \"Andre\":\n",
+        "  print(letter)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ceHLdPiQ-S0O",
+        "outputId": "854e9370-0fdb-4208-d817-eebeeef00777"
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1\n",
+            "2\n",
+            "3\n",
+            "4\n",
+            "5\n",
+            "0\n",
+            "2\n",
+            "4\n",
+            "6\n",
+            "8\n",
+            "A\n",
+            "n\n",
+            "d\n",
+            "r\n",
+            "e\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "for n in range(1,11):\n",
+        "  if n %2==0:\n",
+        "    print(n,\"is even\")\n",
+        "  else:\n",
+        "    print(n, \"is odd\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "hqLmogoI-l8F",
+        "outputId": "27f30b7a-c816-4805-9d61-0829d14182d1"
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1 is odd\n",
+            "2 is even\n",
+            "3 is odd\n",
+            "4 is even\n",
+            "5 is odd\n",
+            "6 is even\n",
+            "7 is odd\n",
+            "8 is even\n",
+            "9 is odd\n",
+            "10 is even\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "count = 3\n",
+        "while count > 0:\n",
+        "  print(count)\n",
+        "  count = count-1\n",
+        "print(\"Liftoff!\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Bv_zQNr7_Btg",
+        "outputId": "63f97ec2-23bc-4caf-cef8-ccccd89f08ad"
+      },
+      "execution_count": 13,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "3\n",
+            "2\n",
+            "1\n",
+            "Liftoff!\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "score=75\n",
+        "if score>=90:\n",
+        "  print(\"A\")\n",
+        "elif score>=80:\n",
+        "  print(\"B\")\n",
+        "elif score >=70:\n",
+        "  print(\"C\")\n",
+        "else:\n",
+        "  print(\"FAIL\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "aZirdhKI_TmE",
+        "outputId": "e2c67e7b-98cf-4b45-c8c9-f5577d47b647"
+      },
+      "execution_count": 18,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "C\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "for i in range (1,11):\n",
+        "  print(f\"7x{i}={7*i}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "tn-M5ksO_8sg",
+        "outputId": "e17d7ede-0171-4a01-e1c0-f95b177da006"
+      },
+      "execution_count": 19,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "7x1=7\n",
+            "7x2=14\n",
+            "7x3=21\n",
+            "7x4=28\n",
+            "7x5=35\n",
+            "7x6=42\n",
+            "7x7=49\n",
+            "7x8=56\n",
+            "7x9=63\n",
+            "7x10=70\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "total = 0\n",
+        "for i in range(1,101):\n",
+        "  total=total+i\n",
+        "print(total)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "2qjrZhbVAVZ3",
+        "outputId": "26aa7b79-07c5-4ca7-daa2-d7f103088f7c"
+      },
+      "execution_count": 20,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "5050\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "total = 0\n",
+        "for i in range(1,6):\n",
+        "  if i%2==0:\n",
+        "    total +=i\n",
+        "print(total)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "lsBIGeDLAnnP",
+        "outputId": "4d3d682d-792d-46bb-89da-912e1bb5cb9f"
+      },
+      "execution_count": 21,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "6\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "secret = 7\n",
+        "guess = 0\n",
+        "while guess != secret:\n",
+        "  guess = int(input(\"Guess the number (1,10):\"))\n",
+        "  if guess < secret:\n",
+        "    print (\"too low\")\n",
+        "  elif guess > secret:\n",
+        "    print(\"too high\")\n",
+        "  else:\n",
+        "    print(\"Jackpot\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "APZavAMfA3Gt",
+        "outputId": "52519fb3-4dad-4376-c38a-0d2674f39a88"
+      },
+      "execution_count": 22,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Guess the number (1,10):1\n",
+            "too low\n",
+            "Guess the number (1,10):9\n",
+            "too high\n",
+            "Guess the number (1,10):7\n",
+            "Jackpot\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def greet(name):\n",
+        "  return f\"Hello, {name}!\"\n",
+        "print(greet(\"Andre\"))\n",
+        "print(greet(\"Sam\"))\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "5c-b9_b8BzR2",
+        "outputId": "8b671744-96c9-4736-fd99-730fcc4ce659"
+      },
+      "execution_count": 23,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Hello, Andre!\n",
+            "Hello, Sam!\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def add_print(a,b):\n",
+        "  print(a+b)\n",
+        "def add_return(a,b):\n",
+        "  return a+b\n",
+        "x = add_return(2,3)\n",
+        "y = add_print(2,3)\n",
+        "print(x,y)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "H4dAzdB5C365",
+        "outputId": "b424d8cf-4e7d-49f5-8770-6d29de36435e"
+      },
+      "execution_count": 24,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "5\n",
+            "5 None\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def tip(bill, percent=18):\n",
+        "  return bill*percent/100\n",
+        "print(tip(85.50))\n",
+        "print(tip(85.50, 20))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "MSnI1Mh4DWzN",
+        "outputId": "c222f885-ffa6-4810-ca99-f05c6208df2e"
+      },
+      "execution_count": 26,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "15.39\n",
+            "17.1\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import math\n",
+        "import random\n",
+        "print(math.sqrt(16))\n",
+        "print(math.pi)\n",
+        "print(random.randint(1,10))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "O0gOPOY5D6cc",
+        "outputId": "2bbd806b-a69c-452d-fd87-f1a255b7a087"
+      },
+      "execution_count": 27,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "4.0\n",
+            "3.141592653589793\n",
+            "6\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "fruits = [\"Apple\", \"Banana\", \"Cherry\"]\n",
+        "print(fruits[0])\n",
+        "print(fruits[-1])\n",
+        "print(len(fruits))\n",
+        "fruits.append(\"Mango\")\n",
+        "fruits.remove(\"Banana\")\n",
+        "fruits[0]=\"Grape\"\n",
+        "print(fruits)\n",
+        "for fruit in fruits:\n",
+        "  print(fruit)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "6bmbl1FhEqHL",
+        "outputId": "356107df-7d40-4f09-f3d1-44e7b98e2190"
+      },
+      "execution_count": 29,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Apple\n",
+            "Cherry\n",
+            "3\n",
+            "['Grape', 'Cherry', 'Mango']\n",
+            "Grape\n",
+            "Cherry\n",
+            "Mango\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "numbers = [10, 20, 30, 40, 50]\n",
+        "print(numbers[1:4])\n",
+        "print(numbers[:2])\n",
+        "print(numbers[3:])\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Q4dUZ_57Fdft",
+        "outputId": "f40c8de3-4078-4b1e-fdfa-4c234dd29ce4"
+      },
+      "execution_count": 30,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[20, 30, 40]\n",
+            "[10, 20]\n",
+            "[40, 50]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "squares = [n*n for n in range(1,6)]\n",
+        "print(squares)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "YdRB81_zGThn",
+        "outputId": "458d9f37-050c-4ff5-e309-7ef42837f471"
+      },
+      "execution_count": 31,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[1, 4, 9, 16, 25]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "student={\n",
+        "    \"name\":\"Andre\",\n",
+        "    \"age\":24,\n",
+        "    \"skills\":[\"English\", \"Portugese\", \"Arabic\"]\n",
+        "}\n",
+        "print(student[\"name\"])\n",
+        "print(student[\"skills\"][1])\n",
+        "\n",
+        "student[\"city\"]=\"New York\"\n",
+        "student[\"age\"]=25\n",
+        "\n",
+        "for key, value in student.items():\n",
+        "  print(f\"{key}:{value}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "TUTTBQVkGiwE",
+        "outputId": "0f8abef4-5672-40b8-cb9c-52a66f7bde2b"
+      },
+      "execution_count": 32,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Andre\n",
+            "Portugese\n",
+            "name:Andre\n",
+            "age:25\n",
+            "skills:['English', 'Portugese', 'Arabic']\n",
+            "city:New York\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "contacts = {}\n",
+        "\n",
+        "def add_contact(name, phone):\n",
+        "  contacts[name] = phone\n",
+        "  print(f\"Added {name}.\")\n",
+        "\n",
+        "def find_contact(name):\n",
+        "  if name in contacts:\n",
+        "    print(f\"{name}:{contacts[name]}\")\n",
+        "  else:\n",
+        "    print(\"Not Found\")\n",
+        "\n",
+        "def delete_contact(name):\n",
+        "  if name in contacts:\n",
+        "    del contacts[name]\n",
+        "    print(f\"Deleted {name}.\")\n",
+        "  else:\n",
+        "    print(\"Not Found\")\n",
+        "\n",
+        "def show_all():\n",
+        "  for name, phone in contacts.items():\n",
+        "    print(f\"{name}-{phone}\")\n",
+        "\n",
+        "while True:\n",
+        "  action = input(\"Action (add/find/delete/show/quit):\")\n",
+        "  if action == \"add\":\n",
+        "    add_contact(input(\"Name:\"), input(\"Phone:\"))\n",
+        "  elif action == \"find\":\n",
+        "    find_contact(input(\"Name:\"))\n",
+        "  elif action == \"delete\":\n",
+        "    delete_contact(input(\"Name:\"))\n",
+        "  elif action == \"show\":\n",
+        "    show_all()\n",
+        "  elif action == \"quit\":\n",
+        "    break\n",
+        "  else:\n",
+        "    print(\"Unknown Command.\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "7JzJnA4aHrRv",
+        "outputId": "55ca341d-a16b-4351-e15c-4f3c37fb54d3"
+      },
+      "execution_count": 34,
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Action (add/find/delete/show/quit):phone\n",
+            "Unknown Command.\n",
+            "Action (add/find/delete/show/quit):add\n",
+            "Name:Andre\n",
+            "Phone:123456789\n",
+            "Added Andre.\n",
+            "Action (add/find/delete/show/quit):find\n",
+            "Name:andre\n",
+            "Not Found\n",
+            "Action (add/find/delete/show/quit):Andre\n",
+            "Unknown Command.\n",
+            "Action (add/find/delete/show/quit):123456789\n",
+            "Unknown Command.\n",
+            "Action (add/find/delete/show/quit):find\n",
+            "Name:Andre\n",
+            "Andre:123456789\n",
+            "Action (add/find/delete/show/quit):show\n",
+            "Andre-123456789\n",
+            "Action (add/find/delete/show/quit):delete\n",
+            "Name:Andre\n",
+            "Deleted Andre.\n",
+            "Action (add/find/delete/show/quit):quit\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def is_even(n):\n",
+        "  return n%2==0\n",
+        "print(is_even(4))\n",
+        "print(is_even(9))\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "xgN1KVZPJml7",
+        "outputId": "a2979cfa-3a99-435a-8f83-63f221016de8"
+      },
+      "execution_count": 35,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "True\n",
+            "False\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "scores = [72, 95, 88, 62, 79]\n",
+        "highest = scores[0]\n",
+        "for s in scores:\n",
+        "  if s > highest:\n",
+        "    highest = s\n",
+        "average = sum(scores)/len(scores)\n",
+        "\n",
+        "print(f\"Highest:{highest}\")\n",
+        "print(f\"Average:{average}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "V66MSXkfLg48",
+        "outputId": "df0ccd9b-d365-4b28-c3dc-ae838b4eab93"
+      },
+      "execution_count": 36,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Highest:95\n",
+            "Average:79.2\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "from itertools import product\n",
+        "products = {\"shirts\":25, \"hat\":12, \"socks\":5}\n",
+        "total=0\n",
+        "for item, price in products.items():\n",
+        "  print(f\"{item} costs ${price}\")\n",
+        "  total +=price\n",
+        "print(f\"Total:${total}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "MxW6ydtlMICK",
+        "outputId": "6ce6e4f2-895f-4868-d843-d8386f5904f0"
+      },
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "shirts costs $25\n",
+            "hat costs $12\n",
+            "socks costs $5\n",
+            "Total:$42\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import numpy as np\n",
+        "a = np.array([1,2,3,4])\n",
+        "print  (a*2)\n",
+        "print (a+10)\n",
+        "print(a.sum(), a.mean(), a.max())\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "aKUaPEx04bzo",
+        "outputId": "790f4091-be94-4813-aeff-aba89db72ad1"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[2 4 6 8]\n",
+            "[11 12 13 14]\n",
+            "10 2.5 4\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "m=np.array([[1,2,3], [4,5,6]])\n",
+        "print(m.shape)\n",
+        "print(m[0,1])\n",
+        "print(m[:,0])\n",
+        "print(m[1])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "HHPM4HW64twQ",
+        "outputId": "9a419a89-507b-4521-fa3f-627935e72431"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "(2, 3)\n",
+            "2\n",
+            "[1 4]\n",
+            "[4 5 6]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(np.zeros ((2,3)))\n",
+        "print(np.arange(0,10,2))\n",
+        "print(np.random.rand(3))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "2O-Y0GDU5KUE",
+        "outputId": "3e8b4fe5-d5c8-4a7f-d684-37ae3bf5f8de"
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[[0. 0. 0.]\n",
+            " [0. 0. 0.]]\n",
+            "[0 2 4 6 8]\n",
+            "[0.20632039 0.24365592 0.38771313]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a=np.array([1,2,3,4])\n",
+        "print(a>2)\n",
+        "print(a[a>2])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Z7b7lnAQ5kNG",
+        "outputId": "4bf75dbb-0117-4c8d-8688-cc094a53ff06"
+      },
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[False False  True  True]\n",
+            "[3 4]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(m @ m.T)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "g4_gV5-c5w68",
+        "outputId": "af95bdae-bbde-4a5f-a3d3-68500fe7632b"
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[[14 32]\n",
+            " [32 77]]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import pandas as pd\n",
+        "data ={\n",
+        "    \"name\": [\"Anna\",\"Ben\",\"Cara\",\"Dev\",\"Eli\"],\n",
+        "    \"age\": [28,34,29,25,41],\n",
+        "    \"city\":[\"NYC\",\"LA\",\"NYC\",\"Chicago\",\"LA\"],\n",
+        "    \"salary\":[72000,85000,64000,58000,91000]\n",
+        "}\n",
+        "df = pd.DataFrame(data)\n",
+        "df.to_csv(\"people.csv\", index=False)\n",
+        "df = pd.read_csv(\"people.csv\")\n",
+        "print(df)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "hdPm4zDY55s0",
+        "outputId": "dedc718e-0bd5-4343-b0a8-686f3e8c8161"
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "   name  age     city  salary\n",
+            "0  Anna   28      NYC   72000\n",
+            "1   Ben   34       LA   85000\n",
+            "2  Cara   29      NYC   64000\n",
+            "3   Dev   25  Chicago   58000\n",
+            "4   Eli   41       LA   91000\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(df.head())\n",
+        "print(df.shape)\n",
+        "df.info()\n",
+        "print(df.describe())"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "xWFicEKh7HUE",
+        "outputId": "1396de74-cbdf-4d21-b67c-01b5a2eb8c9a"
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "   name  age     city  salary\n",
+            "0  Anna   28      NYC   72000\n",
+            "1   Ben   34       LA   85000\n",
+            "2  Cara   29      NYC   64000\n",
+            "3   Dev   25  Chicago   58000\n",
+            "4   Eli   41       LA   91000\n",
+            "(5, 4)\n",
+            "<class 'pandas.core.frame.DataFrame'>\n",
+            "RangeIndex: 5 entries, 0 to 4\n",
+            "Data columns (total 4 columns):\n",
+            " #   Column  Non-Null Count  Dtype \n",
+            "---  ------  --------------  ----- \n",
+            " 0   name    5 non-null      object\n",
+            " 1   age     5 non-null      int64 \n",
+            " 2   city    5 non-null      object\n",
+            " 3   salary  5 non-null      int64 \n",
+            "dtypes: int64(2), object(2)\n",
+            "memory usage: 292.0+ bytes\n",
+            "             age        salary\n",
+            "count   5.000000      5.000000\n",
+            "mean   31.400000  74000.000000\n",
+            "std     6.268971  13874.436926\n",
+            "min    25.000000  58000.000000\n",
+            "25%    28.000000  64000.000000\n",
+            "50%    29.000000  72000.000000\n",
+            "75%    34.000000  85000.000000\n",
+            "max    41.000000  91000.000000\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(df[\"age\"])\n",
+        "print(df[[\"name\",\"age\"]])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Tigfqmwd7aTa",
+        "outputId": "88e9692c-0220-4980-ba80-ec95727aeee8"
+      },
+      "execution_count": 9,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "0    28\n",
+            "1    34\n",
+            "2    29\n",
+            "3    25\n",
+            "4    41\n",
+            "Name: age, dtype: int64\n",
+            "   name  age\n",
+            "0  Anna   28\n",
+            "1   Ben   34\n",
+            "2  Cara   29\n",
+            "3   Dev   25\n",
+            "4   Eli   41\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(df[df[\"age\"]>30])\n",
+        "print(df[(df[\"age\"]>25)&(df[\"city\"]==\"NYC\")])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "5Po-5EeV7s8N",
+        "outputId": "e98c8e79-ac28-472a-83e0-b9a4d8ff4f3f"
+      },
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "  name  age city  salary\n",
+            "1  Ben   34   LA   85000\n",
+            "4  Eli   41   LA   91000\n",
+            "   name  age city  salary\n",
+            "0  Anna   28  NYC   72000\n",
+            "2  Cara   29  NYC   64000\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(df[\"salary\"].mean())\n",
+        "df[\"bonus\"]=df[\"salary\"]*0.20\n",
+        "print(df.sort_values(\"salary\",ascending=False))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "QdyecH0H8NuH",
+        "outputId": "5c68f855-8677-4a5a-8c1c-4380774ae983"
+      },
+      "execution_count": 13,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "74000.0\n",
+            "   name  age     city  salary    bonus\n",
+            "4   Eli   41       LA   91000  18200.0\n",
+            "1   Ben   34       LA   85000  17000.0\n",
+            "0  Anna   28      NYC   72000  14400.0\n",
+            "2  Cara   29      NYC   64000  12800.0\n",
+            "3   Dev   25  Chicago   58000  11600.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(df.groupby(\"city\")[\"salary\"].mean())"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "KEnWK-6S8jKL",
+        "outputId": "229de683-4b7d-488b-fd52-1ff1f6e4b750"
+      },
+      "execution_count": 14,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "city\n",
+            "Chicago    58000.0\n",
+            "LA         88000.0\n",
+            "NYC        68000.0\n",
+            "Name: salary, dtype: float64\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "messy = pd.DataFrame({\n",
+        "    \"name\":[\"Anna\", \"Ben\", \"Cara\"],\n",
+        "    \"score\": [90, np.nan, 75],\n",
+        "})\n",
+        "print(messy.isna().sum())\n",
+        "print(messy.dropna())\n",
+        "print(messy.fillna(messy[\"score\"].mean()))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "v57jsWmv82vs",
+        "outputId": "c2331dde-bb1f-4246-b687-c9e5118c7732"
+      },
+      "execution_count": 15,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "name     0\n",
+            "score    1\n",
+            "dtype: int64\n",
+            "   name  score\n",
+            "0  Anna   90.0\n",
+            "2  Cara   75.0\n",
+            "   name  score\n",
+            "0  Anna   90.0\n",
+            "1   Ben   82.5\n",
+            "2  Cara   75.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import numpy as np\n",
+        "temps = np.array ([22,25,19,30,28])\n",
+        "avg = temps.mean()\n",
+        "print(avg)\n",
+        "print(temps[temps>avg])\n",
+        "print(temps * 9/5 + 32)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "mBDQNVGg9dsc",
+        "outputId": "ae9ce0ec-f4af-4337-a2b8-567abcaa3d02"
+      },
+      "execution_count": 18,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "24.8\n",
+            "[25 30 28]\n",
+            "[71.6 77.  66.2 86.  82.4]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "result = df[(df[\"city\"]==\"LA\")&(df[\"salary\"]>80000)]\n",
+        "print(result[\"name\"])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "GEEKQrIl-EYS",
+        "outputId": "85659889-a33a-4ca2-a477-d849b61b79ca"
+      },
+      "execution_count": 20,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1    Ben\n",
+            "4    Eli\n",
+            "Name: name, dtype: object\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(df.groupby(\"city\")[\"age\"].mean())\n",
+        "df[\"salary_k\"]=df[\"salary\"]/1000\n",
+        "print(df)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "RMynCTa6-tSX",
+        "outputId": "01b33ec2-4239-4c02-e104-15d4cb88b4ea"
+      },
+      "execution_count": 21,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "city\n",
+            "Chicago    25.0\n",
+            "LA         37.5\n",
+            "NYC        28.5\n",
+            "Name: age, dtype: float64\n",
+            "   name  age     city  salary    bonus  salary_k\n",
+            "0  Anna   28      NYC   72000  14400.0      72.0\n",
+            "1   Ben   34       LA   85000  17000.0      85.0\n",
+            "2  Cara   29      NYC   64000  12800.0      64.0\n",
+            "3   Dev   25  Chicago   58000  11600.0      58.0\n",
+            "4   Eli   41       LA   91000  18200.0      91.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(f\"People in dataset: {len(df)}\")\n",
+        "top_earner = df.loc[df[\"salary\"].idxmax(),\"name\"]\n",
+        "print(f\"Highest paid: {top_earner}\")\n",
+        "print(\"Average salary by city:\")\n",
+        "print(df.groupby(\"city\")[\"salary\"].mean())\n",
+        "over_30 = len(df[df[\"age\"]>30])\n",
+        "print(f\"People over 30:{over_30}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "zPsska4v_B0l",
+        "outputId": "f604b979-3976-4564-c8ce-0e4df86d289e"
+      },
+      "execution_count": 22,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "People in dataset: 5\n",
+            "Highest paid: Eli\n",
+            "Average salary by city:\n",
+            "city\n",
+            "Chicago    58000.0\n",
+            "LA         88000.0\n",
+            "NYC        68000.0\n",
+            "Name: salary, dtype: float64\n",
+            "People over 30:2\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "JMN14kIk_24T"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
